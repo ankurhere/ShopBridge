@@ -1,0 +1,14 @@
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\bin\Debug\netcoreapp2.1\Shopbridge.deps.json
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\bin\Debug\netcoreapp2.1\Shopbridge.runtimeconfig.json
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\bin\Debug\netcoreapp2.1\Shopbridge.runtimeconfig.dev.json
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\bin\Debug\netcoreapp2.1\Shopbridge.dll
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\bin\Debug\netcoreapp2.1\Shopbridge.pdb
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.csproj.CoreCompileInputs.cache
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.RazorAssemblyInfo.cache
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.RazorAssemblyInfo.cs
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.AssemblyInfoInputs.cache
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.AssemblyInfo.cs
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.RazorTargetAssemblyInfo.cache
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.dll
+C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.pdb
+C:\Users\ankur\source\repos\ShopBridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.csprojAssemblyReference.cache
