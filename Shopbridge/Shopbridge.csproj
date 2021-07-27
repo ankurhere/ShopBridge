@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210725101602_Initial.cs" />
+    <Compile Remove="Migrations\20210725101602_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210725102241_Inital.cs" />
+    <Compile Remove="Migrations\20210725102241_Inital.Designer.cs" />
+    <Compile Remove="Migrations\20210725102449_Initial.cs" />
+    <Compile Remove="Migrations\20210725102449_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210725110427_Initial.cs" />
+    <Compile Remove="Migrations\20210725110427_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210725111031_Initial.cs" />
+    <Compile Remove="Migrations\20210725111031_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210726120210_Initial.cs" />
+    <Compile Remove="Migrations\20210726120210_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210726123419_Initial.cs" />
+    <Compile Remove="Migrations\20210726123419_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210727141221_Initial.cs" />
+    <Compile Remove="Migrations\20210727141221_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210727141255_iniial.cs" />
+    <Compile Remove="Migrations\20210727141255_iniial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="_Database\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
