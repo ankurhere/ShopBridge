@@ -8,5 +8,5 @@ This API also consists of Operations:
 
 Before Running the Application:
 1. Update the connectionstring, 'ProductContextConnection' in the "appsettings.json" with the server name of your SQL Server.
-2. Run the Commands, 'Add-Migration'
+2. Run the Commands, 'Add-Migration' in NUGET Package Manager Console of your Visual Studio for this Project.
 3. Run the Commands, 'Update-Database' to create the 'ShopBridge' Database and 'Products' table in your SQL Server.
