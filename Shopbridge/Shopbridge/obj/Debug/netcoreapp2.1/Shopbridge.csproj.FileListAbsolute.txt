@@ -11,4 +11,3 @@ C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbr
 C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.RazorTargetAssemblyInfo.cache
 C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.dll
 C:\Users\ankur\source\repos\Shopbridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.pdb
-C:\Users\ankur\source\repos\ShopBridge\Shopbridge\obj\Debug\netcoreapp2.1\Shopbridge.csprojAssemblyReference.cache

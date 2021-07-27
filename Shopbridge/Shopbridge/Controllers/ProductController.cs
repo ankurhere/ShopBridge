@@ -20,6 +20,7 @@ namespace Shopbridge.Controllers
             _productContext = productContext;
         }
 
+
         // GET api/values
         [HttpGet]
         public IActionResult GetProducts()
@@ -31,51 +32,83 @@ namespace Shopbridge.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(Guid id)
         {
-            Product product= await _productContext.Products.FindAsync(id);
-            _productContext.Entry(product).State = EntityState.Detached;
-            if (product != null)
-                return Ok(product);
-            return NotFound($"Product with ID: {id} was not found");
+            try
+            {
+                Product product = await _productContext.Products.FindAsync(id);
+                _productContext.Entry(product).State = EntityState.Detached;
+                if (product != null)
+                    return Ok(product);
+                return NotFound($"Product with ID: {id} was not found");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         //// POST api/values
         [HttpPost]
         public async Task<IActionResult> AddProduct(Product product)
         {
-            await _productContext.Products.AddAsync(product);
-            await _productContext.SaveChangesAsync();
-            return RedirectToAction(nameof(GetProducts));
+            try
+            {
+                await _productContext.Products.AddAsync(product);
+                await _productContext.SaveChangesAsync();
+                return RedirectToAction(nameof(GetProducts));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         //// PUT api/values/5
         [HttpPatch("{id}")]
         public async Task<IActionResult> EditProduct(Guid id, Product product)
         {
-            var existingProduct = await _productContext.Products.FindAsync(id);
-            _productContext.Entry(existingProduct).State = EntityState.Detached;
-            if (existingProduct != null)
+            try
             {
-                product.id = existingProduct.id;
-                _productContext.Products.Update(product);
-                await _productContext.SaveChangesAsync();
-                return RedirectToAction(nameof(GetProducts));
+                var existingProduct = await _productContext.Products.FindAsync(id);
+                _productContext.Entry(existingProduct).State = EntityState.Detached;
+                if (existingProduct != null)
+                {
+                    product.id = existingProduct.id;
+                    _productContext.Products.Update(product);
+                    await _productContext.SaveChangesAsync();
+                    return RedirectToAction(nameof(GetProducts));
+                }
+                return NotFound($"Product with ID: {id} was not found");
             }
-            return NotFound($"Product with ID: {id} was not found");
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         //// DELETE api/values/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var existingProduct = await _productContext.Products.FindAsync(id);
-            _productContext.Entry(existingProduct).State = EntityState.Detached;
-            if (existingProduct != null)
+            try
             {
-                _productContext.Products.Remove(existingProduct);
-                await _productContext.SaveChangesAsync();
-                return Ok();
+                var existingProduct = await _productContext.Products.FindAsync(id);
+                _productContext.Entry(existingProduct).State = EntityState.Detached;
+                if (existingProduct != null)
+                {
+                    _productContext.Products.Remove(existingProduct);
+                    await _productContext.SaveChangesAsync();
+                    return Ok();
+                }
+                return NotFound($"Product with ID: {id} was not found");
             }
-            return NotFound($"Product with ID: {id} was not found");
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
